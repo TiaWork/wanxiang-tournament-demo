@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>点点开黑 · 万象棋赛事</title><link rel="stylesheet" href="/static/app.css"></head>
+<body class="c-page">
+  <div class="c-desktop-note">点点开黑 · 万象棋赛事专区</div>
+  <div class="phone-shell">
+    <header class="c-hero">
+      <span class="chess deco-a">♞</span><span class="chess deco-b">♜</span><span class="chess deco-c">♟</span>
+      <div class="c-hero-top"><a class="brand brand-on-dark" href="/"><span class="brand-mark">点</span><span>点点开黑</span></a><button class="hero-rule" data-action="rules">赛事规则</button></div>
+      <div class="event-symbol">♟</div>
+      <div class="event-kicker">王者万象棋 · S2</div>
+      <h1>点点棋王杯</h1>
+      <p id="c-event-date">海选赛 · 12月15日 - 12月19日</p>
+      <div class="hero-pills"><span>全民海选</span><span>每日盲排</span><span>现金与积分奖励</span></div>
+    </header>
+    <nav class="c-tabs">
+      <button class="on" data-tab="schedule">我的赛程</button><button data-tab="upload">战绩上传</button><button data-tab="ranking">赛事榜单</button><button data-action="open-chat">站内信<span id="c-unread" class="unread-dot" hidden></span></button>
+    </nav>
+    <main id="c-app" class="c-main"><div class="loading">正在读取赛事数据…</div></main>
+    <footer class="c-footer"><span class="brand"><span class="brand-mark">点</span><span>点点开黑</span></span><span>快乐组队，轻松上分</span></footer>
+  </div>
+  <div id="c-modal" class="modal-mask" hidden><div class="modal-card"><button class="modal-close" data-action="close-modal">×</button><div id="c-modal-body"></div></div></div>
+  <div id="c-toast" class="toast" hidden></div>
+  <script src="/static/c.js"></script>
+</body></html>
