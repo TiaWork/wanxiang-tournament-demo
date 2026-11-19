@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>点点扶摇 · 万象棋赛事管理</title><link rel="stylesheet" href="/static/app.css"></head>
+<body class="b-page">
+  <aside class="b-sidebar">
+    <a class="b-logo" href="/"><span class="brand-mark">点</span><div><b>点点扶摇</b><small>管理系统 · 本地 Demo</small></div></a>
+    <div class="b-menu-caption">队长生态管理</div><div class="b-menu-caption">点点 Agent</div><div class="b-menu-caption">薪酬管理</div><div class="b-menu-caption">队长管理</div>
+    <div class="b-menu-group">赛事管理<span>⌄</span></div>
+    <button class="b-board" data-action="board-select" data-game="王者荣耀">王者荣耀</button><button class="b-board on" data-action="board-select" data-game="王者万象棋">王者万象棋</button>
+    <div class="b-submenus">
+      <button class="on" data-page="events">赛事列表</button><button data-page="rules">规则配置</button><button data-page="players">选手管理</button><button data-page="leaders">领队库</button><button data-page="groups">分组管理</button><button data-page="review">赛果审核</button><button data-page="advance">晋级管理 · 榜单</button>
+    </div>
+    <button class="b-board" data-action="board-select" data-game="和平精英">和平精英</button><button class="b-board" data-action="board-select" data-game="三角洲行动">三角洲行动</button><button class="b-board" data-action="board-select" data-game="狼人杀">狼人杀</button>
+    <button class="b-message-menu" data-page="messages">消息中心</button>
+  </aside>
+  <div class="b-workspace">
+    <header class="b-topbar"><div><span class="b-breadcrumb">首页 / 赛事管理 / 王者万象棋 / </span><b id="b-page-title">赛事列表</b></div><div class="b-top-actions"><label style="display:flex;align-items:center;gap:6px">业务日期 <input id="b-demo-date" type="date" style="border:1px solid #e1e5ed;border-radius:6px;padding:5px 7px;color:#627088"></label><a href="/c" target="_blank">打开 C 端 ↗</a><button id="b-reset">重置演示数据</button><span class="b-user">本地运营 · 张恬虞</span></div></header>
+    <main id="b-app" class="b-main"><div class="loading">正在读取赛事数据…</div></main>
+  </div>
+  <div id="b-modal" class="modal-mask" hidden><div class="modal-card"><button class="modal-close" data-action="close-modal">×</button><div id="b-modal-body"></div></div></div>
+  <div id="b-toast" class="toast" hidden></div>
+  <script src="/static/b.js"></script>
+</body></html>
